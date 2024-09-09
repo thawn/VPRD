@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vprd" #Virtual Field Diagnostic Tool 
-description = "Voucher: Najmeh Mirian Virtual Field Diagnostic Tool"
+description = "Virtual Pulse Reconstruction Diagnostic"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
