@@ -18,8 +18,8 @@ To install the package, you can use the following command:
 
 .. code-block:: bash
 
-   git clone https://codebase.helmholtz.cloud/haicu/vouchers/desy/mirian_virtual-field-diagnostic-tool
-   cd mirian_virtual-field-diagnostic-tool
+   git clone https://github.com/thawn/VPRD
+   cd VPRD
    pip install .
 
 .. toctree::
