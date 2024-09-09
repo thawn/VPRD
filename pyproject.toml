@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]>7.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vprd" #Virtual Field Diagnostic Tool 
+description = "Voucher: Najmeh Mirian Virtual Field Diagnostic Tool"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Till Korten", email = "t.korten@hzdr.de"},
+]
+keywords = ["simulation based inference", "python", "torch"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "h5py",
+    "tables",
+    "pandas",
+    "pyclesperanto", #for image processing
+    "torch",
+    "scikit-learn",
+    "tensorboard",
+    "lightning",
+    "seaborn",
+    "scipy",
+    "statsmodels",
+    "jupyter",
+    "matplotlib",
+    
+]
+dynamic = ["version"]
+
+# [project.scripts]
+# sim-uncrushed = "sor.uncrushed:main"
+
+[tool.setuptools]
+# packages = ["vprd"]
+include-package-data = true
+
+[tool.setuptools_scm]
+write_to = "src/vprd/_version.py"
+
+[tool.setuptools.dynamic]
+version = {attr = "vprd._version.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["vprd*"]
+namespaces = true
+
+[project.optional-dependencies]
+dev = ["pytest","jupyter","matplotlib"]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: tests as slow (deselect with '-m \"not slow\"')",
+    #"gpu: tests that require a gpu (deselect with '-m \"not gpu\"')",
+]
+filterwarnings = ["ignore:.*Please use.*:DeprecationWarning",]
+pythonpath = [".",]
+testpaths = [ "tests" ]
