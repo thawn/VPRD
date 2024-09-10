@@ -34,7 +34,7 @@ Execute the notebook docs/notebooks/train_mlp_model.ipynb
 
 ### Reproduce data preprocessing
 
-Please note that your computer needs a GPU that supports OpenCL in order to execute this notebook
+Please note that your computer needs a GPU that supports OpenCL in order to execute this notebook.
 
 Execute the notebook docs/notebooks/data_merging.ipynb
 
@@ -43,3 +43,8 @@ Execute the notebook docs/notebooks/data_merging.ipynb
 Please note that your computer needs a GPU that supports OpenCL in order to execute this notebook
 
 Execute the notebook docs/notebooks/image_to_electron_power
+
+## Troubleshooting
+
+In case of Runtime errors in th preprocessing and image processing notebooks, please follow the [pyclesperanto GPU troubleshooting guidelines](https://github.com/clEsperanto/pyclesperanto?tab=readme-ov-file#troubleshooting-graphics-cards-drivers).
+
