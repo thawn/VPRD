@@ -4,29 +4,25 @@ Code for the paper Harnessing Machine Learning for Single-Shot Measurement of Fr
 
 ## Installation
 
-### Create an environment with at least python 3.10
+Download the code and install it with pip
 
-For example using venv
+Note: You need at least Python version 3.10
 
 ```bash
+mkdir VPRD
+cd VPRD
+curl https://anonymous.4open.science/api/repo/VPRD-1146/zip -o VPRD.zip
+unzip VPRD.zip
 python3 -m venv vprd-env
 source vprd-env/bin/activate
-```
-
-### Download the code and install it with pip
-
-```bash
-git clone https://github.com/thawn/VPRD
-cd VPRD
 pip install .
 ```
 
 ## First steps
 
-Start jupyter lab:
+Start jupyter lab (while `vprd-env` is still active):
 
 ```bash
-source vprd-env/bin/activate # activate the environment
 jupyter lab
 ```
 
