@@ -3,8 +3,8 @@ requires = ["setuptools", "setuptools_scm[toml]>7.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vprd" #Virtual Field Diagnostic Tool 
-description = "Voucher: Najmeh Mirian Virtual Field Diagnostic Tool"
+name = "vprd" #Virtual Pulse Reconstruction Diagnostic 
+description = "Virtual Pulse Reconstruction Diagnostic"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -32,7 +32,7 @@ dependencies = [
     "matplotlib",
     
 ]
-dynamic = ["version"]
+version = "0.1.0"
 
 # [project.scripts]
 # sim-uncrushed = "sor.uncrushed:main"
@@ -40,12 +40,6 @@ dynamic = ["version"]
 [tool.setuptools]
 # packages = ["vprd"]
 include-package-data = true
-
-[tool.setuptools_scm]
-write_to = "src/vprd/_version.py"
-
-[tool.setuptools.dynamic]
-version = {attr = "vprd._version.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]

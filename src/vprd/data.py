@@ -8,9 +8,8 @@ from sklearn.preprocessing import StandardScaler
 
 data_path = Path('../../data')
 local_data_path = Path(data_path / 'cloud/')
+
 # Calibration factors for time and energy
-# see:
-# https://codebase.helmholtz.cloud/haicu/vouchers/desy/mirian_virtual-field-diagnostic-tool/-/blob/main/data/Time%20and%20energy%20collibration%20factors%20in%20morning%20shift%2027_02_2024.pdf?ref_type=heads
 ENERGY_CALIBRATION_FACTOR = 0.000033 * 879  # MeV/pixel
 TIME_CALIBRATION_FACTOR = 0.55  # ± 0.01 fs/pixel
 time_energy_aspect_ratio = TIME_CALIBRATION_FACTOR / ENERGY_CALIBRATION_FACTOR
