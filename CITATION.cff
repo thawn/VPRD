@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Korten"
+  given-names: "Till"
+  orcid: "https://orcid.org/0000-0002-2315-9247"
+- family-names: "Steinbach"
+  given-names: "Peter"
+  orcid: "https://orcid.org/0000-0002-4974-230X"
+- family-names: "Mirian"
+  given-names: "Najmeh Sadat"
+  orcid: "https://orcid.org/0000-0002-6152-2721"
+title: "Virtual Pulse Reconstruction Diagnostic"
+version: 0.2.0
+doi: 10.5281/zenodo.14179724
+date-released: 2024-11-18
+url: "https://github.com/thawn/VPRD"
