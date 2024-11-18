@@ -1,5 +1,7 @@
 # Virtual Pulse Reconstruction Diagnostic
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14179724.svg)](https://doi.org/10.5281/zenodo.14179724)
+
 Code for the paper Harnessing Machine Learning for Single-Shot Measurement of Free Electron Laser Pulse Power
 
 ## Installation
@@ -70,7 +72,7 @@ pip install .
 mamba install -c conda-forge ocl_icd_wrapper_apple
 ```
 
-**Linux** users may need to install the following package: 
+**Linux** users may need to install the following package:
 
 ```bash
 mamba install -c conda-forge ocl-icd-system
