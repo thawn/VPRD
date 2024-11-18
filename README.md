@@ -57,10 +57,8 @@ If you don't have mamba installed yet, we recommend to [install miniforge](https
 #### Download the code and create an environment
 
 ```bash
-mkdir VPRD
+git clone https://github.com/thawn/VPRD.git
 cd VPRD
-curl https://anonymous.4open.science/api/repo/VPRD-1146/zip -o VPRD.zip
-unzip VPRD.zip
 mamba env create -f env.yml
 mamba activate vprd-env
 pip install .
